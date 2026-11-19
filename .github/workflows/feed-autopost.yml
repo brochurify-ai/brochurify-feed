@@ -1,0 +1,50 @@
+name: Feed autopost
+
+on:
+  schedule:
+    # 17:00 UTC = 18:00 in Nederland (CET, nov–dec). Cron is best-effort.
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = alleen container maken, niet publiceren"
+        required: false
+        default: "0"
+      force_n:
+        description: "post-nummer forceren (test), leeg = datum van vandaag"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feed-autopost
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Publish today's post
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          FORCE_N: ${{ github.event.inputs.force_n }}
+        run: python publish.py
+      - name: Commit posted state
+        run: |
+          if ! git diff --quiet posted.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add posted.json
+            git commit -m "feed: post geplaatst $(date -u +%F)"
+            git push
+          fi
