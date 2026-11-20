@@ -63,10 +63,14 @@ def main():
             die(f"FORCE_N={force_n} niet in queue.")
     else:
         today = datetime.now(TZ).strftime("%Y-%m-%d")
-        item = next((q for q in queue if q["date"] == today and q["n"] not in posted), None)
-        if not item:
-            print(f"Niets te plaatsen voor {today} (of al geplaatst). Klaar.")
+        # Pak de VROEGSTE nog-niet-geplaatste post die op of vóór vandaag valt.
+        # Zo haalt een gemiste dag zichzelf in (max 1 per run), i.p.v. permanent over te slaan.
+        due = sorted((q for q in queue if q["n"] not in posted and q["date"] <= today),
+                     key=lambda q: (q["date"], q["n"]))
+        if not due:
+            print(f"Niets te plaatsen voor {today} (niets due of al geplaatst). Klaar.")
             return
+        item = due[0]
 
     image_url = f"{raw_base}/{item['image']}"
     caption = item["caption"]
