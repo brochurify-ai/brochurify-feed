@@ -70,7 +70,12 @@ def maak_carousel(ig, token, raw_base, item):
 def maak_reel(ig, token, item):
     params = {"media_type": "REELS", "video_url": item["video_url"],
               "caption": item["caption"]}
-    if item.get("thumb_offset") is not None:
+    # De COVER bepaalt de kleur van de gridtegel. Een Reel is een blauwe/navy
+    # video; met een witte `cover_url` wordt het een WITTE tegel. Alleen voor
+    # video's die zelf licht zijn mag `thumb_offset` (een frame uit de video).
+    if item.get("cover_url"):
+        params["cover_url"] = item["cover_url"]
+    elif item.get("thumb_offset") is not None:
         params["thumb_offset"] = str(item["thumb_offset"])
     cont = post(f"{ig}/media", params, token)
     cid = cont["id"]
