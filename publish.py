@@ -95,6 +95,30 @@ def main():
     media_id = pub.get("id")
     print(f"GEPUBLICEERD: media_id={media_id}")
 
+    # 3) Facebook-pagina (best-effort; IG blijft het hoofdkanaal).
+    #    Vereist dat de token pages_manage_posts heeft; anders wordt FB netjes overgeslagen.
+    page_id = os.environ.get("FB_PAGE_ID")
+    if page_id:
+        try:
+            acc = requests.get(f"{GRAPH}/me/accounts",
+                               params={"fields": "id,access_token", "access_token": token},
+                               timeout=30).json()
+            pg = next((p for p in acc.get("data", []) if p["id"] == page_id), None)
+            if not pg:
+                print(f"FB: pagina {page_id} niet bereikbaar met deze token — overgeslagen.")
+            else:
+                ptok = pg["access_token"]
+                r = requests.post(f"{GRAPH}/{page_id}/photos",
+                                  data={"url": image_url, "caption": caption, "access_token": ptok},
+                                  timeout=60)
+                if r.status_code == 200:
+                    print(f"FB GEPUBLICEERD: {r.json().get('post_id') or r.json().get('id')}")
+                else:
+                    print("FB: FOUT (IG stond al live) " + str(r.status_code) + " "
+                          + r.text.replace(ptok, "***").replace(token, "***")[:200])
+        except Exception as e:
+            print(f"FB: uitzondering (IG stond al live): {e}")
+
     if not force_n:
         posted.append(item["n"])
         (HERE / "posted.json").write_text(json.dumps(sorted(posted)) + "\n")
