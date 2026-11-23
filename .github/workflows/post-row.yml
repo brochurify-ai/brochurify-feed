@@ -1,0 +1,32 @@
+name: Post row
+
+# Post een hele RIJ van 3 (carrousel + Reel + beeld) in volgorde, uit row.json.
+# Handmatig starten (workflow_dispatch). dry_run=1 maakt alleen de containers.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = alleen containers maken, niet publiceren (veilige proef)"
+        required: false
+        default: "0"
+
+concurrency:
+  group: post-row
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Post the row
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python post_row.py

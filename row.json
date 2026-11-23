@@ -1,0 +1,25 @@
+[
+  {
+    "type": "reel",
+    "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/reels/9x16_49s_ui-uitleg-zonderqr-en-staand.mp4",
+    "thumb_offset": 1200,
+    "caption": "This is Brochurify, start to finish. 📘\nChoose what you're selling, answer a few questions, add your photos — and share a brochure that looks the part.\n\nTry it at brochurify.ai\n\n#Brochurify #BrochureDesign #SalesTools #PresentationSells #SmallBusiness"
+  },
+  {
+    "type": "image",
+    "image": "images/row1/navy-defender.jpg",
+    "caption": "Not every brochure should be white. 🖤📘\nDark, editorial templates — built in. For cars, homes, art and anything worth presenting well.\n\nCreate yours at brochurify.ai\n\n#Brochurify #BrochureDesign #AutomotiveMarketing #CarMarketing #PresentationSells"
+  },
+  {
+    "type": "carousel",
+    "images": [
+      "images/row1/flow-01.jpg",
+      "images/row1/flow-02.jpg",
+      "images/row1/flow-03.jpg",
+      "images/row1/flow-04.jpg",
+      "images/row1/flow-05.jpg",
+      "images/row1/flow-06.jpg"
+    ],
+    "caption": "Choose. Answer. Upload. Share. ✨📘\nHow a brochure gets made in under 60 seconds.\n\nCreate yours at brochurify.ai\n\n#Brochurify #BrochureDesign #DigitalBrochure #SalesTools #PresentationSells"
+  }
+]

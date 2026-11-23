@@ -1,9 +1,11 @@
 name: Feed autopost
 
 on:
-  schedule:
-    # 17:00 UTC = 18:00 in Nederland (CET, nov–dec). Cron is best-effort.
-    - cron: "0 17 * * *"
+  # DAGELIJKSE CRON GEPAUZEERD 23-11-2026: de feed gaat over op posten per RIJ van 3
+  # (zie post-row.yml), want één losse foto/dag verschuift het grid-ritme (navy-
+  # middenkolom). Weer aanzetten mag pas als de poster rijen van 3 aankan.
+  # schedule:
+  #   - cron: "0 17 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
