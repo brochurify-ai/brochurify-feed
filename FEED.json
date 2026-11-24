@@ -1,0 +1,663 @@
+[
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/01.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/02.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/03.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/04.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/05.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/06.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-a-listing-sells/07.png"
+  ],
+  "caption": "Most listing brochures lose the buyer on the cover.\nFive things that make one actually sell, saved from the brochures that get viewings booked.\nWhich one are you skipping?\n\nMake yours at brochurify.ai\n\n#realestatemarketing #listingphotos #realtorlife #brochurify",
+  "n": 1,
+  "date": "2026-11-25",
+  "topic": "gids",
+  "vertical": "vastgoed"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-bookshop-bath-creme.mp4",
+  "caption": "Before and after, sixty seconds apart.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 2,
+  "date": "2026-11-26",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-bookshop-bath.mp4",
+  "caption": "Watch a blank brief turn into a brochure.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 3,
+  "date": "2026-11-27",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-c-pov-now/01.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-c-pov-now/02.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-c-pov-now/03.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-c-pov-now/04.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-c-pov-now/05.png"
+  ],
+  "caption": "POV: the client wants the brochure and they want it now.\nOption A is an afternoon in a design tool. Option B is six questions and done.\n\nMake yours at brochurify.ai\n\n#smallbusiness #salestools #pitchdeck #brochurify",
+  "n": 4,
+  "date": "2026-11-28",
+  "topic": "pov",
+  "vertical": "business"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-auto-licht.mp4",
+  "caption": "Your listing deserves better than a PDF nobody opens.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 5,
+  "date": "2026-11-29",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-bookshop-bath.mp4",
+  "caption": "The reveal never gets old.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 6,
+  "date": "2026-11-30",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-b-sixty-seconds/01.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-b-sixty-seconds/02.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-b-sixty-seconds/03.png",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-b-sixty-seconds/04.png"
+  ],
+  "caption": "This took 60 seconds. No designer, no blank page.\nYou answer a few questions, you get a brochure that looks like an agency made it.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 7,
+  "date": "2026-12-01",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-loft-london-creme.mp4",
+  "caption": "A brochure that looks agency made.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 8,
+  "date": "2026-12-02",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-bronze-maquette.mp4",
+  "caption": "From nothing to a brochure worth sending.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 9,
+  "date": "2026-12-03",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-villa-algarve-en/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-villa-algarve-en/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-villa-algarve-en/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-villa-algarve-en/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-villa-algarve-en/05.jpg"
+  ],
+  "caption": "Every listing deserves to look like this.\n\nMake yours at brochurify.ai\n\n#realestatemarketing #listingphotos #realtorlife #brochurify",
+  "n": 10,
+  "date": "2026-12-04",
+  "topic": "villa",
+  "vertical": "vastgoed"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-auto-charcoal.mp4",
+  "caption": "First impressions are not a photo. They are a feeling.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 11,
+  "date": "2026-12-05",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-bronze-maquette.mp4",
+  "caption": "Press go, get a brochure that looks the part.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 12,
+  "date": "2026-12-06",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-pijn/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-pijn/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-pijn/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-pijn/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-pijn/05.jpg"
+  ],
+  "caption": "Stop losing buyers on the cover.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 13,
+  "date": "2026-12-07",
+  "topic": "pijn",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-defender-en-navy.mp4",
+  "caption": "Same listing. One looks sold already.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 14,
+  "date": "2026-12-08",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-invoice-saas-licht.mp4",
+  "caption": "Every detail, laid out to sell.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 15,
+  "date": "2026-12-09",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-villa-algarve-en/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-villa-algarve-en/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-villa-algarve-en/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-villa-algarve-en/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-villa-algarve-en/05.jpg"
+  ],
+  "caption": "Give buyers something worth opening.\n\nMake yours at brochurify.ai\n\n#realestatemarketing #listingphotos #realtorlife #brochurify",
+  "n": 16,
+  "date": "2026-12-10",
+  "topic": "villa",
+  "vertical": "vastgoed"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-bezichtiging-creme.mp4",
+  "caption": "Presentation sets the price in the buyer's mind.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 17,
+  "date": "2026-12-11",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-defender-en.mp4",
+  "caption": "Watch a blank brief turn into a brochure.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 18,
+  "date": "2026-12-12",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-defender-en/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-defender-en/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-defender-en/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-defender-en/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-defender-en/05.jpg"
+  ],
+  "caption": "Not every brochure should be white.\n\nMake yours at brochurify.ai\n\n#cardealership #automotivemarketing #carsales #brochurify",
+  "n": 19,
+  "date": "2026-12-13",
+  "topic": "defender",
+  "vertical": "auto"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-invoice-saas-charcoal.mp4",
+  "caption": "Before and after, sixty seconds apart.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 20,
+  "date": "2026-12-14",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-villa-algarve-en-licht.mp4",
+  "caption": "A brochure that looks agency made.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 21,
+  "date": "2026-12-15",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-pijn/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-pijn/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-pijn/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-pijn/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-pijn/05.jpg"
+  ],
+  "caption": "The brochure is the first handshake.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 22,
+  "date": "2026-12-16",
+  "topic": "pijn",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-export-creme.mp4",
+  "caption": "Your listing deserves better than a PDF nobody opens.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 23,
+  "date": "2026-12-17",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-invoice-saas.mp4",
+  "caption": "From nothing to a brochure worth sending.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 24,
+  "date": "2026-12-18",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-bookshop-bath/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-bookshop-bath/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-bookshop-bath/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-bookshop-bath/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-bookshop-bath/05.jpg"
+  ],
+  "caption": "Small shop, big presentation.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 25,
+  "date": "2026-12-19",
+  "topic": "bookshop",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-loft-london-blauw.mp4",
+  "caption": "Same listing. One looks sold already.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 26,
+  "date": "2026-12-20",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-defender-en.mp4",
+  "caption": "The reveal never gets old.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 27,
+  "date": "2026-12-21",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-loft-london/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-loft-london/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-loft-london/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-loft-london/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-loft-london/05.jpg"
+  ],
+  "caption": "Turn a walk through into a brochure they keep.\n\nMake yours at brochurify.ai\n\n#realestatemarketing #listingphotos #realtorlife #brochurify",
+  "n": 28,
+  "date": "2026-12-22",
+  "topic": "loft",
+  "vertical": "vastgoed"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-auto-navy.mp4",
+  "caption": "First impressions are not a photo. They are a feeling.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 29,
+  "date": "2026-12-23",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-loft-london.mp4",
+  "caption": "Watch a blank brief turn into a brochure.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 30,
+  "date": "2026-12-24",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-invoice-saas/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-invoice-saas/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-invoice-saas/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-invoice-saas/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-showcase-invoice-saas/05.jpg"
+  ],
+  "caption": "Your business, presented like it means it.\n\nMake yours at brochurify.ai\n\n#smallbusiness #salestools #pitchdeck #brochurify",
+  "n": 31,
+  "date": "2026-12-25",
+  "topic": "invoice",
+  "vertical": "business"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-villa-algarve-en-charcoal.mp4",
+  "caption": "Before and after, sixty seconds apart.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 32,
+  "date": "2026-12-26",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-invoice-saas.mp4",
+  "caption": "Press go, get a brochure that looks the part.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 33,
+  "date": "2026-12-27",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/05.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/06.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-vragen/07.jpg"
+  ],
+  "caption": "A few questions is all it takes.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 34,
+  "date": "2026-12-28",
+  "topic": "vragen",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-bezichtiging-navy.mp4",
+  "caption": "Presentation sets the price in the buyer's mind.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 35,
+  "date": "2026-12-29",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_10s_flip-villa-algarve-en.mp4",
+  "caption": "From nothing to a brochure worth sending.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 36,
+  "date": "2026-12-30",
+  "topic": "flip",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/05.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-licht-flow/06.jpg"
+  ],
+  "caption": "Choose, answer, upload, share.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 37,
+  "date": "2026-12-31",
+  "topic": "flow",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_voorna-bronze-maquette-licht.mp4",
+  "caption": "Same listing. One looks sold already.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 38,
+  "date": "2027-01-01",
+  "topic": "voorna",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-loft-london.mp4",
+  "caption": "The reveal never gets old.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 39,
+  "date": "2027-01-02",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-defender-en/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-defender-en/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-defender-en/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-defender-en/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-defender-en/05.jpg"
+  ],
+  "caption": "Dark, editorial templates, built in.\n\nMake yours at brochurify.ai\n\n#cardealership #automotivemarketing #carsales #brochurify",
+  "n": 40,
+  "date": "2027-01-03",
+  "topic": "defender",
+  "vertical": "auto"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-final-creme.mp4",
+  "caption": "Your listing deserves better than a PDF nobody opens.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 41,
+  "date": "2027-01-04",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-bookshop-bath-navy.mp4",
+  "caption": "Every detail, laid out to sell.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 42,
+  "date": "2027-01-05",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-bookshop-bath/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-bookshop-bath/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-bookshop-bath/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-bookshop-bath/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-bookshop-bath/05.jpg"
+  ],
+  "caption": "Make the everyday look premium.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 43,
+  "date": "2027-01-06",
+  "topic": "bookshop",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_11s_ui-editor-en-staand.mp4",
+  "caption": "This is Brochurify, start to finish.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 44,
+  "date": "2027-01-07",
+  "topic": "ui",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_05s_reveal-villa-algarve-en.mp4",
+  "caption": "Press go, get a brochure that looks the part.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 45,
+  "date": "2027-01-08",
+  "topic": "reveal",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-loft-london/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-loft-london/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-loft-london/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-loft-london/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-loft-london/05.jpg"
+  ],
+  "caption": "City listings that read like a magazine.\n\nMake yours at brochurify.ai\n\n#realestatemarketing #listingphotos #realtorlife #brochurify",
+  "n": 46,
+  "date": "2027-01-09",
+  "topic": "loft",
+  "vertical": "vastgoed"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-bezichtiging-licht.mp4",
+  "caption": "First impressions are not a photo. They are a feeling.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 47,
+  "date": "2027-01-10",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-bronze-maquette-blauw.mp4",
+  "caption": "A brochure that looks agency made.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 48,
+  "date": "2027-01-11",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-invoice-saas/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-invoice-saas/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-invoice-saas/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-invoice-saas/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-showcase-invoice-saas/05.jpg"
+  ],
+  "caption": "Numbers look better in a real brochure.\n\nMake yours at brochurify.ai\n\n#smallbusiness #salestools #pitchdeck #brochurify",
+  "n": 49,
+  "date": "2027-01-12",
+  "topic": "invoice",
+  "vertical": "business"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_16s_ui-flow-en-staand.mp4",
+  "caption": "Choose, answer, upload, share. That is the whole tool.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 50,
+  "date": "2027-01-13",
+  "topic": "ui",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_30s_hoe-het-werkt-staand-navy.mp4",
+  "caption": "Here is how it works.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 51,
+  "date": "2027-01-14",
+  "topic": "hoe",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/05.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/06.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-vragen/07.jpg"
+  ],
+  "caption": "You answer, we design.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 52,
+  "date": "2027-01-15",
+  "topic": "vragen",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-export-licht.mp4",
+  "caption": "Presentation sets the price in the buyer's mind.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 53,
+  "date": "2027-01-16",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_15s_showcase-defender-en-charcoal.mp4",
+  "caption": "Every detail, laid out to sell.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 54,
+  "date": "2027-01-17",
+  "topic": "showcase",
+  "vertical": "merk"
+ },
+ {
+  "type": "carousel",
+  "images": [
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/01.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/02.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/03.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/04.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/05.jpg",
+   "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/en-navy-flow/06.jpg"
+  ],
+  "caption": "The whole flow, in one swipe.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 55,
+  "date": "2027-01-18",
+  "topic": "flow",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_37s_ui-rondgang-en-staand.mp4",
+  "caption": "This is Brochurify, start to finish.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 56,
+  "date": "2027-01-19",
+  "topic": "ui",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_08s_beat-01-navy.mp4",
+  "caption": "One tool for every pitch you need to look sharp.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 57,
+  "date": "2027-01-20",
+  "topic": "beat",
+  "vertical": "merk"
+ },
+ {
+  "type": "image",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/beelden/wit_01_held_auto.jpg",
+  "caption": "Make it look like it is worth it.\n\nMake yours at brochurify.ai\n\n#cardealership #automotivemarketing #carsales #brochurify",
+  "n": 58,
+  "date": "2027-01-21",
+  "topic": "auto",
+  "vertical": "auto"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_12s_hook-fotos-blauw.mp4",
+  "caption": "Your listing deserves better than a PDF nobody opens.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 59,
+  "date": "2027-01-22",
+  "topic": "hook",
+  "vertical": "merk"
+ },
+ {
+  "type": "reel",
+  "video_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/reels/9x16_30s_hoe-het-werkt-staand-licht.mp4",
+  "caption": "Sixty seconds, start to share.\n\nMake yours at brochurify.ai\n\n#brochuredesign #designtools #presentationsells #brochurify",
+  "n": 60,
+  "date": "2027-01-23",
+  "topic": "hoe",
+  "vertical": "merk"
+ }
+]
