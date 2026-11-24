@@ -1,11 +1,12 @@
 name: Feed autopost
 
 on:
-  # DAGELIJKS 1 post uit FEED.json (content-eerste lijn, 24-11-2026). De oude pauze
-  # (posten per rij van 3 vanwege het vaste kleurenraster) is vervallen: het raster is
-  # losgelaten, dus 1 losse post per dag mag weer. 17:00 UTC = 18:00 Amsterdam (winter).
+  # De poster draait ELK UUR in een venster; publish_daily.py beslist zelf of hij dat uur
+  # post, zodat de posttijd per dag VERSCHILT (niet elke dag hetzelfde moment). Het dagdoel
+  # (2/dag tijdens de opschroef t/m 8-12, daarna 1/dag) zit in publish_daily.py, niet hier.
+  # 9-20 UTC = 10:00-21:00 Amsterdam (winter).
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "0 9-20 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
