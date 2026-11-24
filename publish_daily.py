@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
-"""Publiceer de @brochurify-post van vandaag (reel, carrousel of beeld).
+"""Publiceer @brochurify-posts op WISSELENDE tijden, met een dagdoel.
 
-Draait dagelijks via GitHub Actions. Leest FEED.json (de content-eerste wachtrij,
-1 post per dag, zie het plan in de hoofdrepo) en pakt de vroegste nog-niet-geplaatste
-post waarvan de datum op of vóór vandaag valt (Europe/Amsterdam). Idempotent: na een
-geslaagde publicatie komt het postnummer in geplaatst.json, dat de workflow terugcommit.
-Een gemiste dag haalt zichzelf in (max 1 per run).
+De workflow draait elk uur in een venster (zie feed-autopost.yml). Elke run beslist
+zelf of hij NU post, zodat de posttijd per dag verschilt (niet elke dag hetzelfde moment).
+Zo werkt het:
+  - Dagdoel: 2 posts/dag t/m BOOST_END (tijdelijke opschroef), daarna 1/dag.
+  - Al genoeg geplaatst vandaag? Dan niets doen.
+  - Minstens MIN_GAP minuten tussen twee posts op dezelfde dag.
+  - Anders kans-op-posten = (nog nodig) / (resterende uurslots), dus de post valt op een
+    willekeurig uur; aan het eind van het venster wordt hij geforceerd zodat het dagdoel haalt.
 
-Alle media staat als absolute, publieke URL in FEED.json (DigitalOcean Spaces CDN),
-dus hier is geen RAW_BASE meer nodig. Geen vast kleurenraster meer: een reel is gewoon
-een reel, geen witte cover nodig tenzij FEED.json er een meegeeft.
-
-Env: IG_USER_ID, IG_ACCESS_TOKEN. DRY_RUN=1 maakt de container maar publiceert niet.
-FORCE_N=<n> draait post n, los van de datum (test).
+Post de vroegste nog-niet-geplaatste post uit FEED.json (op n-volgorde). Media staat als
+absolute, publieke URL in FEED.json (Spaces CDN). Idempotent via geplaatst.json, nu met
+tijdstempel per post. DRY_RUN=1 bouwt alleen de container. FORCE_N=<n> post die post nu,
+los van dagdoel/tijd (handmatig).
 """
-import json, os, sys, time
-from datetime import datetime
+import json, os, sys, time, random
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
@@ -23,6 +24,11 @@ import requests
 HERE = Path(__file__).resolve().parent
 GRAPH = "https://graph.facebook.com/v21.0"
 TZ = ZoneInfo("Europe/Amsterdam")
+
+# --- cadans-instellingen ---
+BOOST_END = datetime(2026, 12, 8).date()  # t/m deze dag 2 posts/dag, daarna 1/dag
+MIN_GAP = 150            # minuten minimaal tussen twee posts op dezelfde dag
+WINDOW_EIND_UUR = 21     # laatste uur (Amsterdam) waarop nog gepost mag worden
 
 def die(m, code=1):
     print(m, file=sys.stderr); sys.exit(code)
@@ -48,8 +54,7 @@ def container_carousel(ig, token, item):
             "children": ",".join(kids), "caption": item["caption"]}, token)["id"]
 
 def container_reel(ig, token, item):
-    params = {"media_type": "REELS", "video_url": item["video_url"],
-              "caption": item["caption"]}
+    params = {"media_type": "REELS", "video_url": item["video_url"], "caption": item["caption"]}
     if item.get("cover_url"):
         params["cover_url"] = item["cover_url"]
     elif item.get("thumb_offset") is not None:
@@ -66,33 +71,9 @@ def container_reel(ig, token, item):
     die("Reel werd niet op tijd FINISHED.")
 
 def container_image(ig, token, item):
-    return post(f"{ig}/media",
-        {"image_url": item["image_url"], "caption": item["caption"]}, token)["id"]
+    return post(f"{ig}/media", {"image_url": item["image_url"], "caption": item["caption"]}, token)["id"]
 
-def main():
-    token = os.environ.get("IG_ACCESS_TOKEN")
-    ig = os.environ.get("IG_USER_ID")
-    if not token or not ig:
-        die("IG_ACCESS_TOKEN of IG_USER_ID ontbreekt.")
-    dry = os.environ.get("DRY_RUN") == "1"
-
-    feed = json.loads((HERE / "FEED.json").read_text())
-    gpad = HERE / "geplaatst.json"
-    gedaan = json.loads(gpad.read_text() or "[]") if gpad.exists() else []
-
-    force = os.environ.get("FORCE_N")
-    if force:
-        item = next((q for q in feed if str(q["n"]) == str(force)), None)
-        if not item:
-            die(f"FORCE_N={force} niet in FEED.json.")
-    else:
-        today = datetime.now(TZ).strftime("%Y-%m-%d")
-        due = sorted((q for q in feed if q["n"] not in gedaan and q["date"] <= today),
-                     key=lambda q: (q["date"], q["n"]))
-        if not due:
-            print(f"Niets te plaatsen voor {today}. Klaar."); return
-        item = due[0]
-
+def bouw_en_publiceer(ig, token, item, dry):
     t = item["type"]
     print(f"Post #{item['n']} ({item.get('date')}, {t}): {item['caption'][:70]}...")
     if t == "carousel":
@@ -104,15 +85,55 @@ def main():
     else:
         die(f"onbekend type {t!r}")
     print("container:", cid)
-
     if dry:
-        print("DRY_RUN — container gemaakt, niet gepubliceerd."); return
+        print("DRY_RUN — container gemaakt, niet gepubliceerd."); return None
     pub = post(f"{ig}/media_publish", {"creation_id": cid}, token)
     print("GEPUBLICEERD media_id:", pub.get("id"))
-    if not force:
-        gedaan.append(item["n"])
-        gpad.write_text(json.dumps(sorted(gedaan)))
-        print("geplaatst.json bijgewerkt:", sorted(gedaan))
+    return pub.get("id")
+
+def main():
+    token = os.environ.get("IG_ACCESS_TOKEN"); ig = os.environ.get("IG_USER_ID")
+    if not token or not ig:
+        die("IG_ACCESS_TOKEN of IG_USER_ID ontbreekt.")
+    dry = os.environ.get("DRY_RUN") == "1"
+
+    feed = sorted(json.loads((HERE / "FEED.json").read_text()), key=lambda x: x["n"])
+    gpad = HERE / "geplaatst.json"
+    gedaan = json.loads(gpad.read_text() or "[]") if gpad.exists() else []
+    done_ids = {g["n"] for g in gedaan}
+    now = datetime.now(TZ)
+
+    force = os.environ.get("FORCE_N")
+    if force:
+        item = next((q for q in feed if str(q["n"]) == str(force)), None)
+        if not item:
+            die(f"FORCE_N={force} niet in FEED.json.")
+    else:
+        today = now.date().isoformat()
+        doel = 2 if now.date() <= BOOST_END else 1
+        vandaag = [g for g in gedaan if g["at"][:10] == today]
+        if len(vandaag) >= doel:
+            print(f"Dagdoel {doel} al gehaald vandaag ({len(vandaag)}). Niets doen."); return
+        if vandaag:
+            laatst = max(datetime.fromisoformat(g["at"]) for g in vandaag)
+            mins = (now - laatst).total_seconds() / 60
+            if mins < MIN_GAP:
+                print(f"Vorige post {mins:.0f} min geleden (< {MIN_GAP}). Nog even wachten."); return
+        nodig = doel - len(vandaag)
+        slots_over = max(1, WINDOW_EIND_UUR - now.hour)  # resterende uurslots incl. nu
+        moet = slots_over <= nodig
+        if not moet and random.random() > nodig / slots_over:
+            print(f"Slot overslaan voor spreiding (uur {now.hour}, nodig {nodig}, slots {slots_over})."); return
+        item = next((q for q in feed if q["n"] not in done_ids), None)
+        if not item:
+            print("Wachtrij leeg, niets meer te plaatsen."); return
+
+    media_id = bouw_en_publiceer(ig, token, item, dry)
+    if dry or media_id is None:
+        return
+    gedaan.append({"n": item["n"], "at": now.isoformat(timespec="seconds")})
+    gpad.write_text(json.dumps(gedaan, ensure_ascii=False, indent=0))
+    print("geplaatst.json bijgewerkt, nu", len(gedaan), "posts.")
 
 if __name__ == "__main__":
     main()
