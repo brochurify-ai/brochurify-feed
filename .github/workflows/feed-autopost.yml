@@ -5,8 +5,9 @@ on:
   # post, zodat de posttijd per dag VERSCHILT (niet elke dag hetzelfde moment). Het dagdoel
   # (2/dag tijdens de opschroef t/m 8-12, daarna 1/dag) zit in publish_daily.py, niet hier.
   # 9-20 UTC = 10:00-21:00 Amsterdam (winter).
-  schedule:
-    - cron: "0 9-20 * * *"
+  # PAUZE 24-11 (Floris wil eerst de volgorde/kleurbasis bevestigen):
+  # schedule:
+  #   - cron: "0 9-20 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
