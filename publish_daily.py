@@ -73,6 +73,30 @@ def container_reel(ig, token, item):
 def container_image(ig, token, item):
     return post(f"{ig}/media", {"image_url": item["image_url"], "caption": item["caption"]}, token)["id"]
 
+def wacht_finished(cid, token, pogingen=20):
+    """Wacht tot de container verwerkt is (carrousel/beeld hebben ook even nodig)."""
+    for i in range(pogingen):
+        code = get(cid, {"fields": "status_code,status"}, token).get("status_code")
+        if code == "FINISHED":
+            return
+        if code == "ERROR":
+            die(f"Container {cid} kreeg status ERROR.")
+        print(f"  wacht op container {i}: {code}")
+        time.sleep(6)
+
+def publiceer_met_retry(ig, cid, token, pogingen=10):
+    """media_publish; IG geeft soms 9007/2207027 'even geduld' tot de container klaar is."""
+    for i in range(pogingen):
+        p = {"creation_id": cid, "access_token": token}
+        r = requests.post(f"{GRAPH}/{ig}/media_publish", data=p, timeout=120)
+        if r.status_code == 200:
+            return r.json().get("id")
+        body = r.text.replace(token, "***")
+        if '2207027' in body or '"code":9007' in body:
+            print(f"  container nog niet publiceerbaar (poging {i}), wacht..."); time.sleep(8); continue
+        die(f"Graph API fout {r.status_code} op /media_publish:\n{body}")
+    die("Container werd niet op tijd publiceerbaar.")
+
 def bouw_en_publiceer(ig, token, item, dry):
     t = item["type"]
     print(f"Post #{item['n']} ({item.get('date')}, {t}): {item['caption'][:70]}...")
@@ -87,9 +111,10 @@ def bouw_en_publiceer(ig, token, item, dry):
     print("container:", cid)
     if dry:
         print("DRY_RUN — container gemaakt, niet gepubliceerd."); return None
-    pub = post(f"{ig}/media_publish", {"creation_id": cid}, token)
-    print("GEPUBLICEERD media_id:", pub.get("id"))
-    return pub.get("id")
+    wacht_finished(cid, token)
+    media_id = publiceer_met_retry(ig, cid, token)
+    print("GEPUBLICEERD media_id:", media_id)
+    return media_id
 
 def main():
     token = os.environ.get("IG_ACCESS_TOKEN"); ig = os.environ.get("IG_USER_ID")
