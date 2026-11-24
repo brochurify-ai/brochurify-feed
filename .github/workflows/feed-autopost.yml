@@ -17,6 +17,10 @@ on:
         description: "post-nummer forceren (test), leeg = datum van vandaag"
         required: false
         default: ""
+      aantal:
+        description: "FLUSH: plaats dit aantal posts in een run (leeg = normale cadans)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -40,6 +44,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           FORCE_N: ${{ github.event.inputs.force_n }}
+          AANTAL: ${{ github.event.inputs.aantal }}
         run: python publish_daily.py
       - name: Commit geplaatste staat
         run: |
