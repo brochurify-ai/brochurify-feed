@@ -128,6 +128,22 @@ def main():
     done_ids = {g["n"] for g in gedaan}
     now = datetime.now(TZ)
 
+    # FLUSH-modus: post in EEN run de volgende `AANTAL` nog-niet-geplaatste posts (bv. om het
+    # oude kleurenpatroon snel uit de zichtbare grid te duwen). Een run, een commit.
+    aantal = int(os.environ.get("AANTAL") or 0)
+    if aantal > 0 and not os.environ.get("FORCE_N"):
+        todo = [q for q in feed if q["n"] not in done_ids][:aantal]
+        print(f"Flush: {len(todo)} posts in een run.")
+        for item in todo:
+            mid = bouw_en_publiceer(ig, token, item, dry)
+            if not dry and mid:
+                gedaan.append({"n": item["n"], "at": datetime.now(TZ).isoformat(timespec="seconds")})
+            time.sleep(8)
+        if not dry:
+            gpad.write_text(json.dumps(gedaan, ensure_ascii=False, indent=0))
+            print("geplaatst.json bijgewerkt, nu", len(gedaan), "posts.")
+        return
+
     force = os.environ.get("FORCE_N")
     if force:
         item = next((q for q in feed if str(q["n"]) == str(force)), None)
