@@ -2242,5 +2242,60 @@
    "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-o-what-you-get/05.png",
    "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/carrousels/nieuw-o-what-you-get/06.png"
   ]
+ },
+ {
+  "n": 204,
+  "date": "2027-06-15",
+  "type": "image",
+  "topic": "cartoon",
+  "topic_id": "CARTOONS/post-01-canva.png",
+  "vertical": "merk",
+  "cover_kleur": "navy",
+  "caption": "Stop fighting the blank page.\nYou answer a few questions, you get a brochure that looks like an agency made it, in about sixty seconds. No design skills needed.\nMake yours at brochurify.ai",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/cartoons/post-01-canva.png"
+ },
+ {
+  "n": 205,
+  "date": "2027-06-16",
+  "type": "image",
+  "topic": "cartoon",
+  "topic_id": "CARTOONS/post-02-graveyard.png",
+  "vertical": "merk",
+  "cover_kleur": "navy",
+  "caption": "Nobody opens the attachment.\nThe PDF you emailed is in the graveyard with the rest. Send a link that opens on the phone in one tap, plus a QR for the room.\nMake yours at brochurify.ai",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/cartoons/post-02-graveyard.png"
+ },
+ {
+  "n": 206,
+  "date": "2027-06-17",
+  "type": "image",
+  "topic": "cartoon",
+  "topic_id": "CARTOONS/post-03-car.png",
+  "vertical": "auto",
+  "cover_kleur": "navy",
+  "caption": "Sell the car before the test drive.\nA sharp brochure sets the price in the buyer's head before they sit down. Build one in sixty seconds.\nbrochurify.ai",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/cartoons/post-03-car.png"
+ },
+ {
+  "n": 207,
+  "date": "2027-06-18",
+  "type": "image",
+  "topic": "cartoon",
+  "topic_id": "CARTOONS/post-04-now.png",
+  "vertical": "business",
+  "cover_kleur": "navy",
+  "caption": "Can you send something over? Now? Yes.\nThe fast reply wins the deal. Have an agency looking brochure ready before the client finishes asking.\nbrochurify.ai",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/cartoons/post-04-now.png"
+ },
+ {
+  "n": 208,
+  "date": "2027-06-19",
+  "type": "image",
+  "topic": "cartoon",
+  "topic_id": "CARTOONS/post-05-gallery.png",
+  "vertical": "kunst",
+  "cover_kleur": "navy",
+  "caption": "Turn the collection into a catalogue they keep.\nLet each piece breathe, one story per work, a cover that feels like the gallery.\nMake yours at brochurify.ai",
+  "image_url": "https://brochurify-media.ams3.cdn.digitaloceanspaces.com/social/feed/cartoons/post-05-gallery.png"
  }
 ]
